@@ -7,6 +7,11 @@ public class User {
 	
 	public User() {	}
 
+	public User(String nom) {
+		super();
+		this.nom = nom;
+	}
+
 	public String getNom() {
 		return nom;
 	}

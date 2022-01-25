@@ -24,7 +24,7 @@
                     <input type="email" id="emailUser" name="email" value="" size="20" maxlength="60" />
                     <br />
                 </fieldset>
-                <input type="submit" value="Valider"  />
+                <input type="submit" value="Valider"  />               
                 <input type="reset" value="Remettre à zéro" /> <br />
             </form>
         </div>

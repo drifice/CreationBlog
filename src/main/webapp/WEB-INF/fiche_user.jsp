@@ -1,3 +1,5 @@
+<%@page import="beans.User"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -7,11 +9,24 @@
 <title>Afficher un User</title>
 </head>
 <body>
-	<p class="info">${ message }</p>
-	<h1>Fiche user :</h1>	
-	<p>Nom : ${user.nom}</p>
-	<p>Prenom : ${user.prenom}</p>
-	<p>Email : ${user.email}</p>
+
+	<h1>Fiche users :</h1>	
+	
+	<%
+           
+    	List<User> users = (List<User>)request.getAttribute("user");         
+                
+        for(int i = 0; i < users.size(); i++)
+            {
+    %>
+        Nom :<%  users.get(i);%>  -
+        Prenom : ${users[i].prenom} -
+        Email : ${users[i].email} -
+        <a href="/delete?nom=<c:out value='${users[i].nom}' />">Delete</a>  <br>
+    <%
+     	}
+	%>
+	
 	<a href="/creationBlog/creationUser">Créer un nouveau user</a>
 </body>
 </html>
