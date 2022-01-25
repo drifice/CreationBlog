@@ -7,7 +7,8 @@
 <title>Afficher un Article</title>
 </head>
 <body>
-	<h1>Fiche user :</h1>	
+	<h1>Fiche user :</h1>
+	<p>Titre : ${article.titre}</p>	
 	<p>Auteur : ${article.auteur}</p>
 	<p>Contenu : ${article.contenu}</p>
 	<p>Description : ${article.description}</p>

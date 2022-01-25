@@ -12,6 +12,9 @@
                 <fieldset>
                     <legend>Information Article</legend>
     
+                    <label for="titre">titre </label>
+                    <input type="text" id="titre" name="titre" value="" size="20" maxlength="20" />
+                    <br />
                     
                     <label for="contenu">contenu </label>
                     <input type="text" id="contenu" name="contenu" value="" size="20" maxlength="20" />

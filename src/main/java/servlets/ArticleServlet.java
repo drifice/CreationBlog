@@ -22,9 +22,11 @@ public class ArticleServlet extends HttpServlet{
 		String description = req.getParameter("description");
 		String contenu = req.getParameter("contenu");
 		String auteur = req.getParameter("auteur");
+		String titre = req.getParameter("titre");
 		
 		Article article = new Article();
 		
+		article.setTitre(titre);
 		article.setAuteur(auteur);
 		article.setContenu(contenu);
 		article.setDescription(description);

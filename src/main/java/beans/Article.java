@@ -4,11 +4,20 @@ public class Article {
 	private String description;
 	private String contenu;
 	private String auteur;
+	private String titre;
 	
 	public Article() {}
 
 	public String getDescription() {
 		return description;
+	}
+
+	public String getTitre() {
+		return titre;
+	}
+
+	public void setTitre(String titre) {
+		this.titre = titre;
 	}
 
 	public void setDescription(String description) {
